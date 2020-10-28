@@ -1,0 +1,502 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+
+
+    <style type="text/css">
+       @media (max-width: 1800px) and (min-width: 280px){
+  .non-responsive {
+    min-width: 1140px;
+  }
+ }
+ button.btn.btn-outline-secondary:focus {
+    outline: 0;
+    box-shadow: none;
+}
+ .non-responsive .container {
+    max-width: 1140px !important;
+}
+      .custom-arrow .form-control {
+    padding-right: 17px !important;
+}
+      .custom-form .form-control {
+    border: 1px solid #E1E1E1 !important;
+    border-radius: 4px !important;
+}
+       .input-group-append .btn-outline-secondary {
+    background-color: #666666 !important;
+    }
+    .content-bottom-bottom .input-group-append a.btn {
+    background-color: #666666 !important;
+}
+      .bg-teal3{
+    background: #0070C0;
+  }
+  .content-head-top {
+    border-bottom: 1px solid #E1E1E1;
+  }
+
+  .custom-table-1 {
+    position: relative;
+  }
+
+  .custom-table-1:after {
+    content: '';
+    position: absolute;
+    background: #D0D0D0;
+    width: 1px;
+    height: 90px;
+    right: -15px;
+    top: 3px;
+  }
+
+  .custom-form .input-group-sm .form-control {
+    background: #EFEFEF;
+    padding: 0px !important;
+  }
+
+  .tag-line {
+    margin-bottom: 13px;
+    font-size: 12px;
+  }
+
+  .form-button {
+    background: #fff;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+  }
+
+  .form-button .btn {
+    width: 163px;
+  }
+
+  select:focus option {
+    outline: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+  }
+
+  .form-control:focus option {
+    outline: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+  }
+
+
+  .w-145 {
+    width: 145px;
+  }
+
+  .border-line-area {
+    position: relative;
+  }
+
+  .border-line-area:before {
+    position: absolute;
+    right: 9px;
+    height: 26px;
+    background: #D0D0D0;
+    width: 1px;
+    content: '';
+  }
+
+  .outer {
+    border-bottom: 1px solid #e1e1e1;
+    padding: 15px 0px 14px;
+  }
+
+  .modal-data-box .table td,
+  .table th {
+    padding: .75rem;
+    vertical-align: top;
+    border-top: 0;
+    border-bottom: 1px solid #141855 !important;
+    color: #fff;
+  }
+
+  .modal-data-box .modal-inner.table td,
+  .modal-data-box .modal-inner.table th {
+    position: relative;
+  }
+  .modal-data-box .form-control {
+    border-radius: 3px !important;
+  }
+
+  .modal-data-box .modal-inner.table td:after,
+  .modal-data-box .modal-inner.table th:after {
+    content: '';
+    position: absolute;
+    background: #D7D7D7;
+    width: 1px;
+    height: 15px;
+    right: 0px;
+    top: 7px;
+  }
+
+  .bg-blue {
+    background: #353A81 !important;
+  }
+
+  .order_entry_topcontent .input-group-append,
+  .data-wrapper-content .input-group-append {
+    cursor: pointer;
+  }
+
+
+  .custom-arrow select::-ms-expand {
+    display: none;
+  }
+
+  .custom-arrow select {
+    -webkit-appearance: none;
+  }
+.custom-arrow select {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-image: url(http://laravel.demo3031.colgis.com/img/selectarrow.png)!important;
+    background-repeat: no-repeat, repeat !important;
+    background-position: right .7em top 50%, 0 0 !important;
+    background-size: .65em auto, 100% !important;
+}
+  .td-border-line:after {
+    content: '';
+    position: absolute;
+    background: #D0D0D0;
+    width: 1px;
+    height: 26px;
+    left: 15px;
+    top: 3px;
+  }
+
+  .orderentry-databox .data-box {
+    background: #fff;
+    font-size: 0.8em;
+  }
+
+  .custom-input-field .form-control-sm,
+  .input-group-sm>.form-control,
+  .input-group-sm>.input-group-prepend>.input-group-text,
+  .input-group-sm>.input-group-append>.input-group-text,
+  .input-group-sm>.input-group-prepend>.btn,
+  .input-group-sm>.input-group-append>.btn {
+    padding: 0px 17px;
+  }
+
+
+</style>
+  </head>
+  
+  <body>
+    <div class="non-responsive">
+      <div class="content-bottom-bottom">
+          <div class="container">
+            <div class="row mt-2 append_here">
+              <div class="col-12 result" id="clone">
+                <div class="data-wrapper-content" style="width: 100%;">
+                  <div class="data-box-content" style="width: 10%; float: left;background-color:#666666;text-align: center;color:#fff;height: 76px;vertical-align: middle;border-radius: 5px 0px 5px;">
+                    <div style="padding: 15px 0px;height: 76px;">
+                      <div style="width:100%;float:left;">
+                        <div style="width:70%;float:left;color: #fff;">
+                          <span id="append_serial"><input value="1" style = "height: 20%; width: 30%; background-color: #312727;" type = "text" class = "span6 typeahead" id="g_serials"  readonly="" placeholder="1"></span> <span>-</span> <span>0</span>
+                        </div>
+                        <div style="width:30%;float:left;">
+                          <button class="btn delete" style="background-color: #FF6666;color: #fff;border-radius: 10px;border:0;padding: 0 9px;height: 23px;line-height: 23px;font-size:12px;cursor: pointer;"><i class="fa fa-trash" aria-hidden="true"></i></button>
+                        </div>
+                      </div>
+                      <div style="width:100%;float:left;margin-top: 7px;">
+                        <div style="width:33.33%;float:left;color: #fff;">
+                          <button id="btn2" class="btn" style="border-radius: 10px;border:0;padding: 0 9px;height: 23px;line-height: 23px;font-size:12px;background-color: #4dbdd9;color: #fff;cursor: pointer;"><i class="fa fa-plus add" aria-hidden="true"></i></button>
+                        </div>
+                      
+                      </div>
+                    </div>
+                  </div>
+                  <div class="data-box-content2 custom-form text-center orderentry-databox" style="width: 90%;float: left;">
+                    <div style="width: 100%;float: left;">
+                      <div class="data-box float-left" style="padding: 5px; width: 130px;">
+                        <div class="input-group">
+                          <input type="text" class="form-control" readonly="" value="99999">
+                          <div class="input-group-append">
+                            <button type="button" data-toggle="" data-target="" class="btn btn-outline-secondary" style="color: white; "><i class="fa fa-arrow-left" aria-hidden="true"></i></button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="data-box float-left" style="padding: 5px; width: 340px;">
+                        <div class="input-group">
+                          <input type="text" readonly="" class="form-control" value="NNNNNNNNNNNNNNNNNNNNN">
+                          <div class="input-group-append">
+                            <a href="#" data-toggle="" class="btn rounded" style="margin-left: 4px;!important;color: #fff;"><i class="fa fa-clone" aria-hidden="true"></i></a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="data-box float-left" style="padding: 5px; width: 140px;">
+                        <div class="input-group">
+                          <input type="text" class="form-control input_field input_field_date custom_date datePicker" data-date="" autocomplete="off" value="" placeholder="発注日　年/月/日" style="width: 96px!important;">
+                          
+                      
+                        </div>
+                      </div>
+                      <div class="data-box float-left" style="padding: 5px; width: 140px;">
+                        <div class="input-group">
+                          <input id="" type="text" class="form-control input_field datePicker" autocomplete="off" value="" placeholder="個別納期 年/月/日" style="width: 96px!important;">
+                          
+                        
+                        </div>
+                      </div>
+                      <div class="data-box float-left" style="padding: 5px; width: 249px;">
+                        <div class="input-group">
+                          <input type="text" readonly="" class="form-control" value="NNNNN/NNNNN/NNNNN">
+                          <div class="input-group-append" data-toggle="" data-target="">
+                            <button type="button" class="btn btn-outline-secondary" style=" ;color: white;"><i class="fa fa-arrow-left" aria-hidden="true"></i></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="data-box-content2 text-center custom-form orderentry-databox" style="width: 90%;float: left;">
+                    <div style="width: 100%;float: left;">
+                      <div class="data-box float-left" style="padding: 5px; width: 122px;border-right: 0 !important; border-left: 0 !important;">
+                        <input type="text" class="form-control" value="式">
+                      </div>
+                      <div class="data-box float-left" style="padding: 5px; width: 65px;border-right: 0 !important;">
+                        <input type="text" id="val1" class="form-control text-right" value="0">
+                      </div>
+                      <div class="data-box float-left" style="padding: 5px; width: 90px;border-right: 0 !important;">
+                        <input type="text" id="val2" class="form-control text-right" value="10" readonly>
+                      </div>
+                      <div class="data-box float-left" style="padding: 12px 0px; width: 88px;border-right: 0 !important;font-size: 13px;height: 38px;">
+                        999,999,999
+                      </div>
+                      <div class="data-box float-left vertical-line" style="padding: 12px 0px; width: 88px;border-right: 0 !important;font-size: 13px;height: 38px;">
+                        999,999,999
+                      </div>
+                      <div class="data-box float-left" style="padding: 5px; width: 88px;border-right: 0 !important;">
+                        <input type="text" id="val3" class="form-control text-right" value="0" readonly>
+                      </div>
+                      <div class="data-box float-left" style="padding: 5px;float: left; width: 90px;">
+                        <input type="text" class="form-control text-right" value="999,999,999">
+                      </div>
+                      <div class="data-box float-left" style="padding: 5px;float: left; width: 91px;">
+                        <input type="text" class="form-control text-right" value="999,999,999">
+                      </div>
+                      <div class="data-box float-left" style="padding: 5px;float: left; width: 91px;">
+                        <input type="text" class="form-control text-right" value="999,999,999">
+                      </div>
+                      <div class="data-box float-left" style="padding: 5px;float: left; width: 93px;">
+                        <div class="custom-arrow">
+                          <select class="form-control left_select ">
+                            <option value="1">山田　太郎</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="data-box float-left" style="padding: 5px;float: left; width: 93px;">
+                        <div class="custom-arrow">
+                          <select class="form-control left_select ">
+                            <option value="1">鈴木　一郎</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="data-box-content3 custom-form orderentry-databox  text-center" style="width: 100%;float: left;">
+                  <div style="width: 100%;float: left;">
+                    <div class="data-box float-left" style="padding: 5px; width: 298px;border-right: 0 !important; border-left: 0 !important;">
+                      <div class="input-group">
+                        <input type="text" readonly="" class="form-control" value="NNNNNNNNNNNN">
+                        <div class="input-group-append">
+                          <button type="button" class="btn btn-outline-secondary" data-toggle="" data-target="" style="
+                                ;color: white;border-top-right-radius: 4px !important;border-bottom-right-radius: 4px !important;"><i class="fa fa-arrow-left" aria-hidden="true"></i></button>
+                          <a href="#" class="btn rounded" style="margin-left: 4px;!important;color: #fff;"><i class="fa fa-clone" aria-hidden="true"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="data-box float-left" style="padding: 5px; width: 148px;border-right: 0 !important;">
+                      <div class="input-group">
+                        <input type="text" class="form-control" value="**/UIS/新規">
+                        <div class="input-group-append" data-toggle="" data-target="">
+                          <button type="button" class="btn btn-outline-secondary" style=" ;color: white;"><i class="fa fa-arrow-left" aria-hidden="true"></i></button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="data-box float-left" style="padding: 5px; width: 60px;border-right: 0 !important;">
+                      <div class="custom-arrow">
+                        <select class="form-control left_select ">
+                          <option value="0">なし</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="data-box float-left" style="padding: 5px; width: 260px;border-right: 0 !important;">
+                      <div class="input-group">
+                        <input type="text" readonly="" class="form-control" value="NNNNN/NNNNN/NNNNN">
+                        <div class="input-group-append" data-toggle="" data-target="">
+                          <button  type="button" class="btn btn-outline-secondary" style=" ;color: white;"><i class="fa fa-arrow-left" aria-hidden="true"></i></button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="data-box float-left" style="padding: 5px; width: 130px;border-right: 0 !important;">
+                      <input type="text" class="form-control" value="XXXXXXXXXXX">
+                    </div>
+                    <div class="data-box float-left" style="padding: 5px; width: 214px;border-right: 0 !important;">
+                      <input type="text" class="form-control" value="NNNNNNNNNNNNNNNNNN">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+            <hr><hr>
+              <tr align="center">
+                <td colspan = "7" style = "text-align: right;"><strong>Grand Total:</strong></td>
+                <td>
+                    <input value="" style = "height: 100%; width: 25%;" type = "text" class = "span6 typeahead" id="grand_total" name = "grand_total" readonly="" placeholder="0">
+                </td>
+                <td></td>
+            </tr>
+          </div>
+      </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script>
+  $(function () {
+
+    
+
+$(document).on('click', '.delete', function (e) {
+
+
+var content = $('.append_here div:first');
+    
+var sibling = $('.append_here > div').length;
+//alert(sibling);
+if (sibling > 1) {
+    content.remove();
+}
+//$(this).parent().children().remove();
+
+//content.remove();
+});
+
+// var wraper = $('.append_here');
+// $('.add').click(function (e) {
+//   //alert(wraper);
+// e.preventDefault();
+
+// var content = $('.clone div:first').clone();
+
+// // var inputs = content.children().find('input');
+// // inputs.each(function () {
+// //     $(this).val('');
+
+// // });
+// wraper.append(content);
+
+// });
+
+
+$('.add').click(function() {
+
+  var g_serials = $('#g_serials');
+
+  var serials = $('.append_here > div').length;
+
+  //alert(serials);
+
+  g_serials.val(serials);
+  
+  //alert(click_count);
+  //var append_serial = $(this).parent().siblings().find('#append_serial');
+  $('.append_here div:first')
+  
+  .clone()
+  .append()
+  .appendTo($('.append_here'));
+
+  // var sum_serial = val2 * val1;
+
+  // append_serial.val(sum_serial);
+});
+
+$(document).on('keyup', '#val1', function () {
+            var val1 = parseFloat($(this).val());
+            
+            var val2 = parseFloat($(this).parent().siblings().find('#val2').val());
+            
+            var val3 = $(this).parent().siblings().find('#val3');
+
+            var val_sum = val2 * val1;
+            
+            val3.val(val_sum);
+            //alert($quantity);
+
+            // var rate = parseFloat($(this).parent().siblings().find('.rate').val());
+            // var discount = parseFloat($(this).parent().siblings().find('.discount').val());
+            
+
+            // var $total = $(this).parent().siblings().find('.total');
+            // $total.val(rate * quantity);
+
+
+
+            //counting serial
+//             var g_serial = $('#append_serial');
+//                     //alert(g_serial);   
+// //            total sum
+//             var sum_t = 0;
+//             $(".result").children().find('#g_serial').each(function () {
+//                 var va = parseFloat($(this).val());
+//                 //alert(va); 
+//                 sum_t += va;
+//             });
+
+//             g_serial.val(sum_t);
+
+
+            //counting the grant total
+            var grand_total = $('#grand_total');
+                    //alert(grand_total);   
+//            total sum
+            var sum_total = 0;
+            $(".result").children().find('#val3').each(function () {
+                var val = parseFloat($(this).val());
+                sum_total += val;
+            });
+
+            grand_total.val(sum_total);
+
+            // $due_amount.val(sum_total - sum_discount);
+
+
+
+        });
+
+});
+  </script>
+
+  </body>
+</html>
